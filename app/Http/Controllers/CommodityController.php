@@ -14,7 +14,7 @@ class CommodityController extends Controller
     {
         //查找一条
         $commodity=Commodity::find($id);
-        DB::table("commodities")->increment("frequency",1);
+        DB::table("commodities")->where("id",$id)->increment("frequency",1);
         return view("/commodity/yi",compact("commodity"));
     }
     //显示
