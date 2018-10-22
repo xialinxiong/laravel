@@ -38,3 +38,8 @@ Route::get('/part/index','PartController@index');
 Route::any('/part/add','PartController@add');
 Route::any('/part/edit/{id}','PartController@edit');
 Route::get('/part/del/{id}','PartController@del');
+
+Route::get('/admin/index','AdminController@index');
+Route::any('/admin/add','AdminController@add');
+Route::any('/admin/edit/{id}','AdminController@edit');
+Route::get('/admin/del/{id}','AdminController@del');

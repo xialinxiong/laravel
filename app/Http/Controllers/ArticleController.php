@@ -66,7 +66,7 @@ class ArticleController extends Controller
 
 
 
-    //删除
+     //删除
     public function del(Request $request,$id)
     {
         //查询一条

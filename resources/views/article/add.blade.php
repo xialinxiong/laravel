@@ -15,7 +15,7 @@
 
             <select name="fenlei_id" class="form-control">
                 @foreach($fl as $fls)
-                <option value="{{$fls->id}}">{{$fls->fenlei}}</option>
+                    <option value="{{$fls->id}}">{{$fls->fenlei}}</option>
                 @endforeach
             </select>
 
